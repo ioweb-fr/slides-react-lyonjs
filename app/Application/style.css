@@ -1,0 +1,214 @@
+@font-face {
+	font-family: slide-font;
+	src: url(fonts/Cabin-Regular.ttf);
+}
+
+@font-face {
+	font-family: title-font;
+	src: url(fonts/Cabin-bold.ttf);
+}
+
+
+body {
+	background: #fff;
+	margin: 0;
+	height:100%;
+	font-family: slide-font;
+	overflow:hidden;
+	overflow: hidden;
+}
+
+div.slide-cont {
+	position: absolute;
+	top: 0;
+	left:0;
+	width: 100%;
+	height: 100%;
+	border-left: 2px solid black;
+
+}
+
+div.slide {
+	width: 100%;
+	height: 100%;
+	font-size: 3vw;
+	margin:0;
+	padding:0;
+}
+
+h1 {
+	background-color: rgb(117, 7, 54);
+	margin:0;
+	color:white;
+	padding:10px;
+	border-bottom: 3px solid #aaa;
+	font-family: title-font;
+	font-size: 4vw;
+	margin-bottom: 1vh;
+}
+
+ul li {
+	list-style-type: square;
+	margin-left: 1vw;
+}
+
+ol li {
+	margin-left: 3vw;
+}
+
+
+footer {
+	position: absolute;
+	bottom:0;
+	background-color: rgb(28, 34, 38);
+	width:100%;
+	color:white;
+	z-index: 100000;
+	font-size: 2vw;
+	height: 3vw;
+}
+
+footer .footer-progress-bar {
+	transition: width ease-in-out 500ms;
+	position:absolute;
+	top:0;
+	left:0;
+	height: 100%;
+	background-color: rgba(117, 7, 54, 1);
+}
+
+footer .footer-content {
+	position:absolute;
+	top:0;
+	left:0;
+	width: 99%;
+	padding: 0 10px 0 10px;
+
+}
+
+footer div.page-count {
+	float:right;
+}
+
+.right .slide-enter {opacity: 0.9;transform:translate(100%, 0); }
+.right .slide-enter-active { transition: all linear 400ms; opacity: 1;transform: translate(0, 0);}
+
+.right .slide-leave {}
+.right .slide-leave-active {
+	transition: all linear 400ms;
+	transform: translate(-100%, 0);
+
+}
+
+.slide-content {
+	vertical-align: middle;
+	width:100%;
+	height: 100%;
+}
+
+.slide-leave-active .slide-content *{
+	opacity: 0;
+	transition: opacity linear 200ms;
+}
+
+.slide-leave-active .slide-content h2{
+	opacity: 1;
+}
+
+.left .slide-enter {opacity: 0.9;transform:translate(-100%, 0);}
+.left .slide-enter-active { transition: all linear 400ms; opacity: 1; transform: translate(0, 0);}
+
+.left .slide-leave {}
+.left .slide-leave-active {
+	transition: all linear 400ms;
+	transform: translate(100%, 0);
+}
+
+.remote button {
+	width:50%;
+	border-radius:0;
+	height:100px;
+}
+
+.slice {
+	transition: opacity ease-in 200ms;
+}
+
+.timer {
+	position: absolute;
+	bottom: 0;
+	background: black;
+	color:white;
+	text-align:center;
+	font-size: 24pt;
+	width: 100%;
+	padding: 10px;
+}
+
+#whoami {
+	background: #bbb;
+	width:270px;
+	text-align: center;
+	padding: 5px;
+	position:absolute;
+	right: 3vw;
+	top: 15vh;
+}
+
+#logo-bar {
+	margin-top: 50px;
+	margin-left: 40px;
+}
+
+#logo-bar img {
+	display:block;
+	float:left;
+	margin-right: 80px;
+}
+
+h2 {
+	border-bottom: 20px solid rgb(180, 25, 90);
+	border-top: 20px solid rgb(180, 25, 90);
+	text-align:center;
+	width:100%;
+	background: rgb(117, 7, 54);
+	color:white;
+	margin: 10vh auto auto;
+	padding: 10px;
+	font-size: 10vw;
+	text-transform: capitalize;
+	transition: all linear 200ms;
+}
+
+.right .slide-leave-active h2, .left .slide-leave-active h2{
+	transition: all linear 200ms;
+	margin:0;
+	border-width: 0;
+	font-size: 4vw;
+}
+
+.right .slide-enter h2, .left .slide-enter h2{
+	margin:0;
+	border-width: 0;
+	font-size: 4vw;
+}
+
+h1 .cat {
+	color: #BBB;
+}
+
+
+.CodeMirror {
+	margin: 10px;
+	border: 1px solid #DDD;
+	height: auto !important;
+	font-size: 2vw;
+}
+
+
+blockquote {
+	clear: both;
+	font-size: inherit;
+	text-align: center;
+	margin-top: 40px;
+}

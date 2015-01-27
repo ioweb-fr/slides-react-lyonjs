@@ -1,0 +1,7 @@
+windows:
+  - name: Webpack
+    root: .
+    layout: even-horizontal
+    panes:
+      - npm run hot-dev-server
+      - npm run start-dev
